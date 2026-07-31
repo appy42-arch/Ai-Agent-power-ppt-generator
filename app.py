@@ -162,7 +162,6 @@ if all(ALL_API) and user_query:
                           file_name="ppt.html",
                           mime="text/html"):
           st.success("PPT DOWNLOADED SUCCESSFULLY!!")
-              
            
               
       
