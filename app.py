@@ -31,7 +31,7 @@ elif all(ALL_API):
   model= ChatGoogleGenerativeAI(               # Step 1: Model Call
         model = "gemini-3.5-flash-lite",
         google_api_key = GOOGLE_API_KEY)
-   st.sidebar.success("API KEYS LOADED SUCCESSFULLY")
+  st.sidebar.success("API KEYS LOADED SUCCESSFULLY")
   
 
 elif any(ALL_API):
@@ -159,6 +159,7 @@ if all(ALL_API) and user_query:
                   data=code,
                   file_name="ppt.html",
                   mime="text/html"):
+                    
                     st.success("ppt download succesfullly")
               
            
