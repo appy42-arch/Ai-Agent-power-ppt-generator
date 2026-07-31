@@ -32,7 +32,7 @@ if not all(ALL_API):
 elif all(ALL_API):
   model=ChatGoogleGenerativeAI(model="gemini-3.5-flash-lite",
                               google_api_key=GOOGLE_API_KEY) 
-  st.sidebar.success("API KEYS LOADED SUCCESSFULLY")                           )
+  st.sidebar.success("API KEYS LOADED SUCCESSFULLY")                           
   
 elif any(ALL_API):
   st.sidebar.info("api keys loaded successfully")
