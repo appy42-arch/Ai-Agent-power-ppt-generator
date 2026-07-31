@@ -139,7 +139,7 @@ if all(ALL_API) and user_query:
         related to tech ,bussiness jobs,or user requested output
         in proper HTML news templates"""+ user_query
         response=agent.invoke({"messages":[{"role":"user",
-                                    "content": final_prompt}]})
+                                    "content": prompt}]})
         code=response["messages"][-1].content[-1]["text"]
 
         st.html(code,width="stretch",
