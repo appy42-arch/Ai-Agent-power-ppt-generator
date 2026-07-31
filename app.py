@@ -28,7 +28,7 @@ if not all (ALL_API):
   st.sidebar.error("PASS API-KEYS")
 
 elif all(ALL_API):
-  model ChatGoogleGenerativeAI(               # Step 1: Model Call
+  model= ChatGoogleGenerativeAI(               # Step 1: Model Call
         model = "gemini-3.5-flash-lite",
         google_api_key = GOOGLE_API_KEY)
    st.sidebar.success("API KEYS LOADED SUCCESSFULLY")
